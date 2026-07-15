@@ -1,5 +1,5 @@
 /* ============================================
-   MANSHI'S BIRTHDAY WEBSITE — SCRIPT.JS
+   MANSI'S BIRTHDAY WEBSITE — SCRIPT.JS
    Firefly Theme: sparkling fireflies, scroll-
    following guide firefly, confetti, music
    ============================================ */
@@ -128,7 +128,7 @@ function initFireflyCanvas() {
 
 /* ============================================
    2. FIREFLY GUIDE — Scroll-following firefly
-   Starts on the 'i' of Manshi, flies to each
+   Starts on the 'i' of Mansi, flies to each
    image (lights it up) then to its dot, all
    the way down to the finale
    ============================================ */
@@ -154,8 +154,8 @@ function initFireflyGuide() {
     function calculateWaypoints() {
         waypoints = [];
 
-        // 1. Start: the 'i' in Manshi
-        const letterI = heroName.querySelector('.letter[style*="--i:5"]');
+        // 1. Start: the 'i' in Mansi
+        const letterI = heroName.querySelector('.letter[style*="--i:4"]');
         if (letterI) {
             const rect = letterI.getBoundingClientRect();
             waypoints.push({
