@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Manshi 🫧</title>
+    <meta name="description" content="A birthday surprise for the most amazing person — Manshi (Bubbles) 🎂🫧">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Firefly background canvas (replaces bubbles) -->
+    <canvas id="bubbleCanvas"></canvas>
+
+    <!-- Firefly Guide — follows scroll -->
+    <div id="fireflyGuide" class="firefly-guide">
+        <div class="firefly-body"></div>
+    </div>
+
+    <!-- Music Toggle -->
+    <button id="musicToggle" class="music-toggle playing" aria-label="Toggle music">
+        <span class="music-icon">🎵</span>
+        <span class="music-label">Pause</span>
+    </button>
+
+    <!-- ============================================ -->
+    <!-- SECTION 1: HERO -->
+    <!-- ============================================ -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-sparkles">
+                <span class="sparkle" style="--delay: 0s; --x: 20%; --y: 30%;">✦</span>
+                <span class="sparkle" style="--delay: 0.5s; --x: 80%; --y: 20%;">✦</span>
+                <span class="sparkle" style="--delay: 1s; --x: 50%; --y: 70%;">✧</span>
+                <span class="sparkle" style="--delay: 1.5s; --x: 15%; --y: 60%;">✦</span>
+                <span class="sparkle" style="--delay: 2s; --x: 85%; --y: 75%;">✧</span>
+                <span class="sparkle" style="--delay: 0.3s; --x: 35%; --y: 15%;">✦</span>
+                <span class="sparkle" style="--delay: 1.2s; --x: 70%; --y: 50%;">✧</span>
+            </div>
+            <p class="hero-subtitle fade-in-up">happy birthday</p>
+            <h1 class="hero-name">
+                <span class="letter" style="--i:0">M</span>
+                <span class="letter" style="--i:1">a</span>
+                <span class="letter" style="--i:2">n</span>
+                <span class="letter" style="--i:3">s</span>
+                <span class="letter" style="--i:4">h</span>
+                <span class="letter" style="--i:5">i</span>
+            </h1>
+            <div class="hero-bubble-nickname">
+                <span class="bubble-text">🫧 Bubbles 🫧</span>
+            </div>
+            <p class="hero-tagline">
+                <span class="typewriter" id="heroTypewriter"></span>
+                <span class="cursor">|</span>
+            </p>
+            <div class="scroll-prompt fade-in-up" style="animation-delay: 3s;">
+                <p>Scroll down to relive our story</p>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 2: TIMELINE — OUR STORY -->
+    <!-- ============================================ -->
+    <section id="timeline" class="timeline">
+        <h2 class="section-title reveal">Our Story</h2>
+        <div class="timeline-line"></div>
+
+        <!-- Chapter 1 -->
+        <div class="timeline-item reveal" data-direction="left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="timeline-image">
+                    <img src="images/how-it-started.jpg" alt="How it all started" loading="lazy">
+                </div>
+                <div class="timeline-text">
+                    <h3>How It Started</h3>
+                    <p>Some friendships take years. Ours? It felt like we'd known each other forever from day one.
+                        That's the thing about finding your person — time doesn't matter.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapter 2 — Gandhinagar Adventure -->
+        <div class="timeline-item reveal" data-direction="right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="timeline-image">
+                    <img src="images/gandhinagar-adventure.jpg" alt="The Gandhinagar Adventure" loading="lazy">
+                </div>
+                <div class="timeline-text">
+                    <h3>The Gandhinagar Adventure 🚗</h3>
+                    <p>We were just roaming around in the car… no destination, no plan. And somehow we ended up in
+                        Gandhinagar. Lost? Maybe. But honestly, getting lost with you is better than finding the way
+                        with anyone else.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapter 3 -->
+        <div class="timeline-item reveal" data-direction="left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="timeline-image">
+                    <img src="images/moments-between.jpg" alt="Our favorite moments" loading="lazy">
+                </div>
+                <div class="timeline-text">
+                    <h3>The Moments Between</h3>
+                    <p>It's not just the big memories — it's the random laughs, the comfortable silences, the inside
+                        jokes nobody else gets. Those are the real ones.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapter 4 — Movie Nights -->
+        <div class="timeline-item reveal" data-direction="right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="timeline-image">
+                    <img src="images/movie-nights.jpg" alt="Movie nights together" loading="lazy">
+                </div>
+                <div class="timeline-text">
+                    <h3>Movie Nights 🎬</h3>
+                    <p>She made me watch Interstellar… and honestly? It hits different with her. "Love is the one thing
+                        that transcends time and space." — Yeah, I get it now.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapter 5 — Her World -->
+        <div class="timeline-item reveal" data-direction="left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="timeline-image">
+                    <img src="images/her-world-2.jpg" alt="Her world" loading="lazy">
+                </div>
+                <div class="timeline-text">
+                    <h3>Her World 📚</h3>
+                    <p>A Potterhead. A dreamer. The kind of person who finishes a book and immediately starts another.
+                        The kind of person who makes everything around her a little more magical. ⚡</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 3: PHOTO GALLERY — MEMORY WALL -->
+    <!-- ============================================ -->
+    <section id="gallery" class="gallery">
+        <h2 class="section-title reveal">Memory Wall 📸</h2>
+        <p class="section-subtitle reveal">Click any photo to see it up close</p>
+        <div class="gallery-grid">
+            <div class="polaroid reveal" style="--rotate: -3deg;" data-caption="Us being us 🫧">
+                <img src="images/us-being-us.jpg" alt="Memory 1" loading="lazy">
+                <div class="polaroid-caption">Us being us 🫧</div>
+            </div>
+            <div class="polaroid reveal" style="--rotate: 2deg;" data-caption="Adventures together 🚗">
+                <img src="images/adventures-together.jpg" alt="Memory 2" loading="lazy">
+                <div class="polaroid-caption">Adventures together 🚗</div>
+            </div>
+            <div class="polaroid reveal" style="--rotate: -1deg;" data-caption="This one's my favorite 💛">
+                <img src="images/favorite.jpg" alt="Memory 3" loading="lazy">
+                <div class="polaroid-caption">This one's my favorite 💛</div>
+            </div>
+            <div class="polaroid reveal" style="--rotate: 3deg;" data-caption="Can't stop laughing 😂">
+                <img src="images/laughing.jpg" alt="Memory 4" loading="lazy">
+                <div class="polaroid-caption">Can't stop laughing 😂</div>
+            </div>
+            <div class="polaroid reveal" style="--rotate: -2deg;" data-caption="Best days ever ✨">
+                <img src="images/best-days.jpg" alt="Memory 5" loading="lazy">
+                <div class="polaroid-caption">Best days ever ✨</div>
+            </div>
+            <div class="polaroid reveal" style="--rotate: 1deg;" data-caption="And many more to come… 💫">
+                <img src="images/many-more.jpg" alt="Memory 6" loading="lazy">
+                <div class="polaroid-caption">And many more to come… 💫</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox for gallery -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+        <img id="lightboxImg" src="" alt="Full size photo">
+        <p id="lightboxCaption" class="lightbox-caption"></p>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SECTION 4: VIDEO -->
+    <!-- ============================================ -->
+    <section id="videoSection" class="video-section">
+        <h2 class="section-title reveal">Our Moments 🎬</h2>
+        <p class="section-subtitle reveal">Press play for the good stuff ▶</p>
+        <div class="video-container reveal">
+            <div class="film-strip-top"></div>
+            <div class="video-wrapper">
+                <video id="mainVideo" controls preload="metadata" poster="images/us-being-us.jpg">
+                    <source src="video/our-moments.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="film-strip-bottom"></div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 5: QUOTE WALL -->
+    <!-- ============================================ -->
+    <section id="quotes" class="quotes">
+        <h2 class="section-title reveal">The Manshi Universe 🌟</h2>
+        <div class="quote-hero reveal">
+            <p class="quote-big">"Me teko launch kar dungi"</p>
+            <span class="quote-credit">— Manshi, probably every day 🚀</span>
+        </div>
+        <div class="quote-cards">
+            <div class="quote-card reveal" style="--hue: 20;">
+                <span class="quote-card-emoji">🧙‍♀️</span>
+                <p>Potterhead since forever</p>
+                <span class="quote-card-detail">⚡ Probably waiting for her Hogwarts letter</span>
+            </div>
+            <div class="quote-card reveal" style="--hue: 175;">
+                <span class="quote-card-emoji">🎬</span>
+                <p>Interstellar enthusiast</p>
+                <span class="quote-card-detail">"Love is the one thing that transcends time and space"</span>
+            </div>
+            <div class="quote-card reveal" style="--hue: 340;">
+                <span class="quote-card-emoji">📚</span>
+                <p>Always has a book in hand</p>
+                <span class="quote-card-detail">Reading is her superpower</span>
+            </div>
+            <div class="quote-card reveal" style="--hue: 200;">
+                <span class="quote-card-emoji">🫧</span>
+                <p>Bubbles</p>
+                <span class="quote-card-detail">Because she lights up every room she enters</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 6: BIRTHDAY LETTER -->
+    <!-- ============================================ -->
+    <section id="letter" class="letter-section">
+        <div class="letter-container reveal">
+            <div class="letter-paper">
+                <div class="letter-stamp">💌</div>
+                <p class="letter-greeting">Dear Manshi,</p>
+                <div class="letter-body" id="letterBody">
+                    <p>I like the way we became friends in such a short time. It feels like we've known each other
+                        forever — like some friendships are just meant to be.</p>
+                    <p>From accidentally ending up in Gandhinagar (still one of the best drives ever), to our movie
+                        marathons, to you threatening to launch me into space — every moment with you is an adventure I
+                        never want to end.</p>
+                    <p>You're a Potterhead, a dreamer, a book lover, and honestly? The most amazing person I know. The
+                        world is better with you in it, and my world definitely is.</p>
+                    <p>So here's to another year of you being incredible. Another year of random road trips, late-night
+                        talks, and making memories that'll last forever.</p>
+                    <p class="letter-closing">Happy Birthday, Bubbles. 🫧<br><br>Here's to many more chapters of us.</p>
+                </div>
+                <div class="letter-signature">
+                    <p>— With love ❤️</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 7: FINALE -->
+    <!-- ============================================ -->
+    <section id="finale" class="finale">
+        <div class="finale-content">
+            <h2 class="finale-text reveal">
+                <span class="finale-word">HAPPY</span>
+                <span class="finale-word">BIRTHDAY</span>
+                <span class="finale-name">MANSHI!</span>
+            </h2>
+            <div class="finale-cake reveal">🎂</div>
+            <p class="finale-year reveal">2026</p>
+            <div class="finale-bubbles">
+                <span>🫧</span><span>🫧</span><span>🫧</span>
+                <span>🫧</span><span>🫧</span><span>🫧</span>
+            </div>
+        </div>
+        <canvas id="confettiCanvas"></canvas>
+    </section>
+
+    <!-- Audio element -->
+    <audio id="bgMusic" loop preload="auto" autoplay>
+        <source src="music/JVKE_-_her_(mp3.pm).mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

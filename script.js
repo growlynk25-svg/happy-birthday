@@ -82,6 +82,7 @@ function initFireflyCanvas() {
             if (this.opacity < 0.01) return;
 
             ctx.save();
+            
 
             // Outer glow
             const gradient = ctx.createRadialGradient(
