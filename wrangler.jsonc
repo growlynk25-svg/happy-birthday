@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "manshi-birthday",
+  "name": "happy-birthday",
   "compatibility_date": "2026-07-15",
   "observability": {
     "enabled": true
