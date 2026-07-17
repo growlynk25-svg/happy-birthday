@@ -87,18 +87,17 @@
             </div>
         </div>
 
-        <!-- Chapter 2 — Gandhinagar Adventure -->
+        <!-- Chapter 2 — My Birthday Ever -->
         <div class="timeline-item reveal" data-direction="right">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
                 <div class="timeline-image">
-                    <img src="images/gandhinagar-adventure.jpg" alt="The Gandhinagar Adventure" loading="lazy">
+                    <img src="images/gandhinagar-adventure.jpg" alt="My Birthday Ever" loading="lazy">
                 </div>
                 <div class="timeline-text">
-                    <h3>The Gandhinagar Adventure 🚗</h3>
-                    <p>We were just roaming around in the car… no destination, no plan. And somehow we ended up in
-                        Gandhinagar. Lost? Maybe. But honestly, getting lost with you is better than finding the way
-                        with anyone else.</p>
+                    <h3>My Birthday Ever 🎂</h3>
+                    <p>You made my birthday very special just with your presence, I had planned my birthday with you for
+                        so long.</p>
                 </div>
             </div>
         </div>
@@ -118,8 +117,23 @@
             </div>
         </div>
 
-        <!-- Chapter 4 — Movie Nights -->
+        <!-- Chapter 3.5 — Roaming Around in the Mall -->
         <div class="timeline-item reveal" data-direction="right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="timeline-image">
+                    <img src="images/mall-roaming.jpg" alt="Roaming around in the mall" loading="lazy">
+                </div>
+                <div class="timeline-text">
+                    <h3>Roaming Around in the Mall 🛍️</h3>
+                    <p>Roaming around in the mall with you, even though we didn't do anything particular at all but it
+                        is always so much fun.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapter 4 — Movie Nights -->
+        <div class="timeline-item reveal" data-direction="left">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
                 <div class="timeline-image">
@@ -127,14 +141,14 @@
                 </div>
                 <div class="timeline-text">
                     <h3>Movie Nights 🎬</h3>
-                    <p>She made me watch Interstellar… and honestly? It hits different with her. "Love is the one thing
-                        that transcends time and space." — Yeah, I get it now.</p>
+                    <p>Watching Dune with you was different, while eating biryani even though I have already watched
+                        before.</p>
                 </div>
             </div>
         </div>
 
         <!-- Chapter 5 — Her World -->
-        <div class="timeline-item reveal" data-direction="left">
+        <div class="timeline-item reveal" data-direction="right">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
                 <div class="timeline-image">
@@ -199,7 +213,7 @@
         <div class="video-container reveal">
             <div class="film-strip-top"></div>
             <div class="video-wrapper">
-                <video id="mainVideo" controls preload="metadata" poster="images/us-being-us.jpg">
+                <video id="mainVideo" controls preload="metadata">
                     <source src="video/our-moments.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -236,7 +250,12 @@
             <div class="quote-card reveal" style="--hue: 200;">
                 <span class="quote-card-emoji">🫧</span>
                 <p>Bubbles</p>
-                <span class="quote-card-detail">Because she lights up every room she enters</span>
+                <span class="quote-card-detail">"I am gonna be the prittest girl at the party"</span>
+            </div>
+            <div class="quote-card reveal" style="--hue: 5;">
+                <span class="quote-card-emoji">🕷️</span>
+                <p>Spider-Man fan</p>
+                <span class="quote-card-detail">With great power comes great responsibility 🕸️</span>
             </div>
         </div>
     </section>
@@ -252,10 +271,11 @@
                 <div class="letter-body" id="letterBody">
                     <p>I like the way we became friends in such a short time. It feels like we've known each other
                         forever — like some friendships are just meant to be.</p>
-                    <p>From accidentally ending up in Gandhinagar (still one of the best drives ever), to our movie
+                    <p>We have so much in common including music taste to movie taste, to our movie
                         marathons, to you threatening to launch me into space — every moment with you is an adventure I
                         never want to end.</p>
-                    <p>You're a Potterhead, a dreamer, a book lover, and honestly? The most amazing person I know. The
+                    <p>I will always be there for you, wish we could have met earlier, The most amazing person I know.
+                        The
                         world is better with you in it, and my world definitely is.</p>
                     <p>So here's to another year of you being incredible. Another year of random road trips, late-night
                         talks, and making memories that'll last forever.</p>
